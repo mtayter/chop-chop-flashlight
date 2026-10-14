@@ -163,13 +163,6 @@ publishing, set the contact address in that file to the address you
 want to be public, and host the policy at a public URL for the store
 listing.
 
-## Publishing
-
-`play-listing.md` is the Play Store listing kit: store descriptions,
-data-safety / ads / foreground-service declarations, required assets,
-and the release checklist. The Play Console steps themselves (account,
-app signing enrollment, track upload) are manual.
-
 ## License
 
 This project is licensed under the MIT License — see [LICENSE](LICENSE).
