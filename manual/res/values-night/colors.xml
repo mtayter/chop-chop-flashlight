@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#1B5E20</color>
+    <color name="accent">#81C784</color>
+    <color name="card_background">#1E1E1E</color>
+    <color name="muted_text">#B0B0B0</color>
+    <color name="torch_on_bg">#2E7D32</color>
+    <color name="torch_on_text">#FFFFFF</color>
+    <color name="torch_off_bg">#424242</color>
+    <color name="torch_off_text">#E0E0E0</color>
+    <color name="status_on">#81C784</color>
+    <color name="status_off">#9E9E9E</color>
+</resources>

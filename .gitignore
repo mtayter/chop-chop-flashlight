@@ -1,0 +1,29 @@
+# Signing keys and local signing config — NEVER commit these.
+# The release keystore signs every update of the published app; losing it
+# (or leaking it) cannot be undone by rotation alone. The debug keystore
+# is low-stakes but still has no reason to be in the repo.
+*.keystore
+*.jks
+*.key
+*.p12
+*.pem
+
+# Local config / signing properties (written by install.sh, kept outside
+# the repo by default, but ignored here too if one ever lands in-tree).
+config.env
+*.env
+local.properties
+signing.properties
+signing-config.properties
+
+# Build outputs — rebuildable from source; never commit binaries.
+*.apk
+*.aab
+*.idsig
+manual/out/
+manual/out-bundle/
+out/
+
+# Misc.
+.DS_Store
+*.log

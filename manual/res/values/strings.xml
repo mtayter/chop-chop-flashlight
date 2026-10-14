@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chop Chop Flashlight</string>
+    <string name="tagline">Chop the phone down twice, like a karate chop, to toggle the flashlight.</string>
+    <string name="gesture_label">Control flashlight with chop chop</string>
+    <string name="buzz_label">Buzz when toggling</string>
+    <string name="status_running">Listening for chop chop…</string>
+    <string name="status_stopped">Not listening.</string>
+    <string name="torch_on">Flashlight ON</string>
+    <string name="torch_off">Flashlight OFF</string>
+    <string name="listening">Listening for chop chop</string>
+    <string name="channel_name">Gesture service</string>
+    <string name="perms_needed">Camera permission is needed for the flashlight.</string>
+    <string name="recalibrate_button">Recalibrate chop detection</string>
+    <string name="calibrate_title">Recalibrate chop detection</string>
+    <string name="calibrate_instructions">Tap Start, then do about 10 chop chops: two quick chops with an abrupt stop at the bottom, pausing between pairs. Tap Stop when done — the app will tune itself to your motion.</string>
+    <string name="calibrate_start">Start recording</string>
+    <string name="calibrate_stop">Stop &amp; analyze</string>
+    <string name="calibrate_recording">Recording… %1$d s, %2$d samples</string>
+    <string name="calibrate_result">Found %1$d chop chop pairs.\nPeak threshold: %2$.1f\nValley threshold: %3$.1f\nWindow: %4$d ms\nCooldown: %5$d ms\nChop direction learned (%6$d%% consistent)\nDirection: (%7$.2f, %8$.2f, %9$.2f)\nDetection: %10$s</string>
+    <string name="calibrate_apply">Apply these thresholds</string>
+    <string name="calibrate_discard">Discard</string>
+    <string name="calibrate_reset">Reset to defaults</string>
+    <string name="calibrate_saved">Thresholds saved — listening with your calibration.</string>
+    <string name="calibrate_reset_done">Default thresholds restored.</string>
+    <string name="calibrate_copy_diag">Copy diagnostics for the developer</string>
+    <string name="calibrate_diag_copied">Diagnostics copied — paste them to the developer.</string>
+</resources>
