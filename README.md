@@ -149,8 +149,7 @@ Headless detector/tuner tests (no Android device needed):
 | `manual/release.keystore` | Release signing key — local only, never committed |
 | `app-icon-512.png`, `feature-graphic.png` | Play Store graphics |
 | `play-screenshot-*.jpg` | Play Store screenshots |
-| `play-listing.md` | Play Store listing kit (descriptions, declarations, checklist) |
-| `privacy-policy.html` | Privacy policy |
+| `privacy.html` | Privacy policy |
 
 ## Privacy
 
@@ -159,7 +158,7 @@ request internet access, so it has no technical means of transmitting
 data off the device. Motion sensor data is processed in memory the
 moment it is read, never recorded or stored. Preferences and
 calibration thresholds live only in the app's private on-device
-storage. See `privacy-policy.html` for the full policy. Before
+storage. See `privacy.html` for the full policy. Before
 publishing, set the contact address in that file to the address you
 want to be public, and host the policy at a public URL for the store
 listing.
@@ -173,5 +172,4 @@ app signing enrollment, track upload) are manual.
 
 ## License
 
-No license file yet. Add one before publishing if you want others to
-reuse this code.
+This project is licensed under the MIT License — see [LICENSE](LICENSE).
