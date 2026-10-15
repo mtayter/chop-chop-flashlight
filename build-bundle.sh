@@ -1,9 +1,12 @@
 #!/bin/bash
 # AAB packaging for Google Play: aapt2 (proto format) + bundletool + jarsigner.
 # Run build-manual.sh first — this reuses its out/dex/classes.dex.
-# Output: ~/workspace/chop-chop-flashlight/ChopChopFlashlight.aab (signed).
+# Output: <repo>/ChopChopFlashlight.aab (signed).
 set -e
-PROJ="$HOME/workspace/chop-chop-flashlight/manual"
+# Repo root: this script lives at the repo root, so all repo paths derive
+# from it instead of a hardcoded checkout location.
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJ="$ROOT/manual"
 SDK="$HOME/workspace/tooling/android-sdk"
 BT="$SDK/build-tools/36.1.0"
 PLATFORM="$SDK/platforms/android-36/android.jar"
@@ -30,7 +33,7 @@ if [ ! -f "$KEYSTORE" ]; then
   exit 1
 fi
 BUNDLETOOL="$HOME/workspace/tooling/bundletool.jar"
-AAB="$HOME/workspace/chop-chop-flashlight/ChopChopFlashlight.aab"
+AAB="$ROOT/ChopChopFlashlight.aab"
 
 for cand in "$HOME/workspace/tooling/jdk/jdk-17.0.20.1+1" "$HOME/workspace/tooling/jdk" \
            /usr/lib/jvm/java-17-openjdk-amd64; do

@@ -3,7 +3,10 @@
 # (Gradle can't download dependencies in this sandbox: the egress proxy
 # blocks Java's direct TCP. Everything here uses only the local SDK.)
 set -e
-PROJ="$HOME/workspace/chop-chop-flashlight/manual"
+# Repo root: this script lives at the repo root, so all repo paths derive
+# from it instead of a hardcoded checkout location.
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJ="$ROOT/manual"
 SDK="$HOME/workspace/tooling/android-sdk"
 BT="$SDK/build-tools/36.1.0"
 PLATFORM="$SDK/platforms/android-36/android.jar"
@@ -33,7 +36,7 @@ if [ ! -f "$KEYSTORE" ]; then
   echo "Keystore not found at $KEYSTORE. Run ./install.sh first." >&2
   exit 1
 fi
-APK="$HOME/workspace/chop-chop-flashlight/ChopChopFlashlight.apk"
+APK="$ROOT/ChopChopFlashlight.apk"
 
 # Prefer the workspace Temurin JDK; this VM has no system JDK.
 for cand in "$HOME/workspace/tooling/jdk" "$HOME/workspace/tooling/jdk/jdk-17.0.20.1+1" \
